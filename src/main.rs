@@ -20,5 +20,5 @@ fn calculate_length(s: String) -> (String, usize) {
     let length  = s.len(); // len()은 String의 길이를 반환한다.
     // 인자로부터 전달받은 'Hello' 는 5글자로 string 값은 "Hello", length는 '5글자' 를 반환한다.
 
-    (s, length) // 함수에서 진행한 소유권을 변수로 다시 되돌려준다.
+    (s, length)
 }
