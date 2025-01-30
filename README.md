@@ -30,7 +30,8 @@ fn calculate_length(s: String) -> (String, usize) {
     let length  = s.len(); // len()은 String의 길이를 반환한다.
     
 
-    (s, length) // 인자로부터 전달받은 'Hello' 는 5글자로 string 값은 "Hello", length는 '5글자' 를 반환한다.
+    (s, length)
+    // 인자로부터 전달받은 'Hello' 는 5글자로 string 값은 "Hello", length는 '5글자' 를 반환한다.
 }
 ```
 
@@ -49,12 +50,14 @@ The length of 'Hello'  is 5
 fn main() {
     let s1 = String::from("Hello");
 
-    let (s2, len) = calculate_length(s1.clone()); // s1을 복제하여 사용하기 위해서는 모두 .clone 을 적용해야 한다.
+    let (s2, len) = calculate_length(s1.clone());
+    // s1을 복제하여 사용하기 위해서는 모두 .clone 을 적용해야 한다.
 
     println!("The length of '{s2}' is {len}");
 
     println!("{}", s1.clone());
-    // ".clone" 을 이용한 Deep Copy 를 통해 변수 그 자체를 복제하여 이용할 수 있다. 단, 동일한 변수를 사용한 모든 곳에 .clone 을 해줘야 한다. 10번 라인 참조.
+    // ".clone" 을 이용한 Deep Copy 를 통해 변수 그 자체를 복제하여 이용할 수 있다.
+    // 단, 동일한 변수를 사용한 모든 곳에 .clone 을 해줘야 한다. 10번 라인 참조.
 }
 
 fn calculate_length(s: String) -> (String, usize) {

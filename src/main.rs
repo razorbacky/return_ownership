@@ -7,16 +7,16 @@
 fn main() {
     let s1 = String::from("Hello"); // s1에 'Hello' String을 저장한다.
 
-    let (s2, len) = calculate_length(s1.clone());
+    let (s2, len) = calculate_length(s1);
     // calculate_length(s1)에 s1의 인자를 전달한다. (s1 인자 = hello)
     // calculate_length 함수의 결괏값에서 length 값을 가져온다.
 
     println!("The length of '{s2}' is {len}");
     // s2('hello')와 len('5') 을 출력한다.
-    // 결과 출력 : "The length of 'Hello' is 5"
 
     println!("{}", s1.clone());
-    // ".clone" 을 이용한 Deep Copy 를 통해 변수 그 자체를 복제하여 이용할 수 있다. 단, 동일한 변수를 사용한 모든 곳에 .clone 을 해줘야 한다. 10번 라인 참조.
+    // ".clone" 을 이용한 Deep Copy 를 통해 변수 그 자체를 복제하여 이용할 수 있다.
+    // 단, 동일한 변수를 사용한 모든 곳에 .clone 을 해줘야 한다. 10번 라인 참조.
 }
 
 fn calculate_length(s: String) -> (String, usize) {
