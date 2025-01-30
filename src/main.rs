@@ -7,7 +7,7 @@
 fn main() {
     let s1 = String::from("Hello"); // s1에 'Hello' String을 저장한다.
 
-    let (s2, len) = calculate_length(s1);
+    let (s2, len) = calculate_length(s1.clone());
     // calculate_length(s1)에 s1의 인자를 전달한다. (s1 인자 = hello)
     // calculate_length 함수의 결괏값에서 length 값을 가져온다.
 
