@@ -77,4 +77,4 @@ fn calculate_length(s: String) -> (String, usize) {
 The length of 'Hello' is 5
 Hello
 ```
-
+**하지만 이런 방식은 일반적으로 사용하기에는 거추장스럽고 많은 작업량이 수반된다. Rust에는 소유권 이동 없이 값을 사용할 수 있는 ***참조(reference)*** 라는 기능이 있다.**
